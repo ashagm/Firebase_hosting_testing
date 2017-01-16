@@ -26,4 +26,7 @@ This is the last step in this chapter. Run the following command from command pr
 
 firebase deploy
 
-After this step the console will log your apps Firebase URL. In our case it is called https://<databasename>.firebaseapp.com. We can run this link in browser to see our app.
+After this step the console will log your apps Firebase URL. In our case it is called https://< databasename >.firebaseapp.com. We can run this link in browser to see our app.
+
+
+https://appauthorize.firebaseapp.com/
