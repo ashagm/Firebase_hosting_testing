@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Firebase testing</title>
+	<!-- Firebase Reference -->
+		<script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
+</head>
+<body>
+<h1> SAMPLE PAGE TO TEST FIREBASE HOSTING </h1>
+<script type="text/javascript">
+	
+	// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyBZ1Ccq5hR8vpCbBNwd_LJHTVjPb2eH--o",
+			authDomain: "appauthorize.firebaseapp.com",
+			databaseURL: "https://appauthorize.firebaseio.com",
+			storageBucket: "appauthorize.appspot.com",
+			messagingSenderId: "792593611206"
+		};
+
+		firebase.initializeApp(config);
+
+		var connectedRef = firebase.database().ref(".info/connected");
+
+		connectedRef.on("value", function(snap) {
+		   if (snap.val() === true) {
+		      console.log("connected");
+		   } else {
+		      console.log("not connected");
+		   }
+		});
+
+
+
+</script>
+
+</body>
+</html>
